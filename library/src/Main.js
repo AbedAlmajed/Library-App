@@ -1,6 +1,6 @@
 import React from "react";
 import initState from "./object"; // Assuming this is where your initial state (list of books) is imported
-
+import BookCatalog from "./bookcatalog";
 function Main() {
   const cardStyles = {
     display: "grid",
@@ -36,11 +36,10 @@ function Main() {
 
   return (
     <div>
-      <div style={cardStyles}>
+      {/* <div style={cardStyles}>
         {initState.books.map((element) => (
           <a key={element.isbn} href="#" style={cardItemStyles}>
             <div className="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-              {/* Icon or any other content */}
             </div>
             <div>
               <h3 style={cardTitleStyles}>{element.Title}</h3>
@@ -50,7 +49,9 @@ function Main() {
             <p style={{ marginTop: "auto" }}>More details</p>
           </a>
         ))}
-      </div>
+      </div> */}
+            <BookCatalog />
+
     </div>
   );
 }
