@@ -39,6 +39,11 @@ function Header() {
               Contact
             </Link>
           </li>
+          <li className="nav-item">
+            <Link to="/catalog" className="nav-link">
+              Catalog
+            </Link>
+          </li>
           {/* Conditional rendering for Signup/Logout */}
           <li className="nav-item">
             {isLoggedIn ? (

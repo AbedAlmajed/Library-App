@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import About from "./About";
 import Contact from "./Contact";
 import Signup from "./Signup";
+import Catalog from "./Catalog";
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/catalog" element={<Catalog />} />
         </Routes>
       </BrowserRouter>
       <Footer />
